@@ -25,6 +25,16 @@ empty_var = None
 print(empty_var)
 print(type(empty_var))
 
+#5
+value = 828 ** 282
+print(value)
+print(type(value))
+
+#6
+result = (52 - 52) + (64 / 8) + (42 % 8)
+print(result)
+
+
 
 
 
