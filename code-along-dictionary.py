@@ -31,3 +31,32 @@ item_number = 1
 for item, price in menu.items():
     print(f'{item_number}, {item}, ${price}')
     item_number += 1
+
+     # prompt
+      # Prompt menu selection (user input)
+    item_choice = input("Choose item number: ")
+
+      
+      # Prompt qty
+    item_qty = int(input("How many: "))
+
+    order = {
+        23:{"name":"Burger","price":5.99},
+        12:{"name":"Burger","price":5.99},
+        1:{"name":"Burger","price":5.99},
+   }
+    
+    order = {
+    }
+
+    if item_choice in menu:
+        item_name = menu[item_choice]['name']
+
+        if item_name[item_name] += item_qty
+        else: 
+            order[item_name] = item_qty
+
+    print(f"Item name: {item_name}, qty {item_qty}")
+
+
+    
