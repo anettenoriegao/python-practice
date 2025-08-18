@@ -15,6 +15,17 @@ drink_price = 1.99
 # PRINT statement - WELCOME TO RESTAURANT
 print("WELCOME TO RESTAURANT")
 
+menu = {
+    'Burger' : 5.99,
+    'Pizza' : 8.49,
+    'Salad' : 4.99,
+    'Drink' : 1.99,
+}
+item_number = 1
+for item, price in menu.items():
+    print(f'{item_number}, {item}, ${price}')
+    item_number += 1
+    
 # Initiate while loop
 order_total = 0
 while True:
@@ -31,4 +42,3 @@ while True:
 
     #promp qty
     item_quantity = int(input("How many:"))
-    
