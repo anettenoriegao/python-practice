@@ -27,18 +27,11 @@ total_cost = 0.0     # running total (used later)
 # PRINT statement - WELCOME TO RESTAURANT
 print("WELCOME TO RESTAURANT")
 
-# Initiate WHILE loop 
-
-# # display menu items
-#  Display menu items - (print statement) - for loop initiate menu_items
-print("Item | Name | Price")
-print()
-
-# # prompt menu selection
-# Prompt menu selection (user input)
-item_choice =
-
-# # prompt qty
-# Prompt qty 
-item_qty =
-# STOP HERE
+# Initiate while loop
+while True:
+    # display menu items (plain prints)
+    print("Item | Name   | Price")
+    print("---------------------")
+    print("1    | Burger | $5.99")
+    print("2    | Pizza  | $8.49")
+    print("3    | Salad  | $8.49")
