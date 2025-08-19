@@ -41,8 +41,26 @@ while True:
    continue_order = input("Add another item? (Y/N):")
    if continue_order not in ("y","Y","yes"):
         break
+print(order)
 
 
-   print(order)
+# map item name -> price (built from menu)
+name_to_price = {d["name"]: d["price"] for d in menu.values()}
+
+# calculate total
+
+print("Order Summary")
+order_total = 0.0
+
+for item_name, qty in order.items():
+    price = name_to_price[item_name]
+    line_total = price * qty
+    order_total += line_total
+    print(f"{item_name} x {qty} = ${line_total:.2f}")
+
+print(f"Total: ${order_total:.2f}")
+
+
+
    
 
