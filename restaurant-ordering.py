@@ -46,6 +46,7 @@ print(order)
 
 # map item name -> price (built from menu)
 name_to_price = {d["name"]: d["price"] for d in menu.values()}
+print(name_to_price)
 
 # calculate total
 
