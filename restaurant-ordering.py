@@ -27,13 +27,22 @@ while True:
       # Prompt qty
    item_qty = int(input("How many: "))
 
+# add to order (by item number)
    if item_choice in menu:
         item_name = menu[item_choice]['name']
         if item_name in order:
              order[item_name] += item_qty
         else:
              order[item_name] = item_qty
-         
+   else:
+        print("That is not a valid menu item.")
+
+# continue ordering
+   continue_order = input("Add another item? (Y/N):")
+   if continue_order not in ("y","Y","yes"):
+        break
+
+
    print(order)
    
 
